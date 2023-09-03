@@ -20,7 +20,7 @@ function Slider() {
     {id:2,src:'./imgs/slider/slider-2.jpg',alt:'2/2',link:'/'},
   ]
   return (
-<div>
+<section>
   <Container maxWidth='xl' className='mt-10'>
 
       <Swiper 
@@ -40,7 +40,7 @@ function Slider() {
           ))}
       </Swiper>
   </Container>
-</div>
+</section>
   )
 }
 
