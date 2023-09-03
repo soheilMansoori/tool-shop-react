@@ -22,33 +22,6 @@
     box-sizing: border-box;
 }
 
-#pointer {
-  cursor: pointer;
-}
-
-#relative {
-  position: relative;
-}
-
-#ArrowForwardIosIcon {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  right: 20px;
-}
-
-#ArrowBackIosIcon {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  left:20px;
-}
-
-.bg-primary {
-  background: #EAB308;
-}
-
-
-#radius {
-  border-radius: 30px;
+#slider {
+  border-radius: 10px;
 }
