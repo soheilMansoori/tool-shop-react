@@ -3,7 +3,7 @@ import Container from '@mui/material/Container'
 
 function EndBanners() {
   return (
-    <section>
+    <section className='my-14 px-4'>
         <Container maxWidth="xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>

@@ -7,6 +7,7 @@ import MiddleBanner from '../componemts/banners/MiddleBanner'
 import NewProducts from '../componemts/new products/NewProducts'
 import EndBanners from '../componemts/banners/EndBanners'
 import SuggestionProducts from '../componemts/suggestion products/SuggestionProducts'
+import Blog from '../componemts/blogs/Blog'
 function HomePage() {
   return (
   <>
@@ -18,6 +19,7 @@ function HomePage() {
   <NewProducts />
   <EndBanners />
   <SuggestionProducts />
+  <Blog />
   </>      
   )
 }
