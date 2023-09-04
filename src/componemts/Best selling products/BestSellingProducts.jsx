@@ -12,19 +12,19 @@ import BestSellingCard from '../cards/BestSellingCard';
 function BestSellingProducts() {
 
   const bestSellingProducts = [
-    {id:1,name:'دستگاه پمپ باد',newPrice:'3000',prevPrice:'4000',img:'./imgs/Bestsllling/Best-1.jpg',allCount:'',count:'',} ,
-    {id:2,name:'دریل چکشی با کیف',newPrice:'3000',prevPrice:'4000',img:'./imgs/Bestsllling/Best-2.jpg',allCount:'',count:'',} ,
-    {id:3,name:'دریل بتن کن مته ای',newPrice:'3000',prevPrice:'4000',img:'./imgs/Bestsllling/Best-3.jpg',allCount:'',count:'',} ,
-    {id:4,name:'دریل شارژی دیوالت',newPrice:'3000',prevPrice:'4000',img:'./imgs/Bestsllling/Best-4.jpg',allCount:'',count:'',} ,
-    {id:5,name:'دستگاه ingco',newPrice:'3000',prevPrice:'4000',img:'./imgs/Bestsllling/Best-5.jpg',allCount:'',count:'',} ,
+    {id:1,name:'دستگاه پمپ باد',newPrice:'3000',prevPrice:'4000',img:'./imgs/Bestsllling/Best-1.jpg',allCount:"100",count:"20",} ,
+    {id:2,name:'دریل چکشی با کیف',newPrice:'3000',prevPrice:'4000',img:'./imgs/Bestsllling/Best-2.jpg',allCount:'30',count:'25',} ,
+    {id:3,name:'دریل بتن کن مته ای',newPrice:'3000',prevPrice:'4000',img:'./imgs/Bestsllling/Best-3.jpg',allCount:'70',count:'40',} ,
+    {id:4,name:'دریل شارژی دیوالت',newPrice:'3000',prevPrice:'4000',img:'./imgs/Bestsllling/Best-4.jpg',allCount:'30',count:'21',} ,
+    {id:5,name:'دستگاه ingco',newPrice:'3000',prevPrice:'4000',img:'./imgs/Bestsllling/Best-5.jpg',allCount:"20",count:"8",} ,
   ]
 
   return (
-<section class="my-14 px-4">
+<section className="my-14 px-4">
   <Container maxWidth='xl'>
 
-      <div class="text-center mb-8">
-        <h2 class="text-3xl">پرفروش ترین کالاها</h2>
+      <div className="text-center mb-8">
+        <h2 className="text-3xl">پرفروش ترین کالاها</h2>
       </div>
 
       <Swiper
@@ -33,18 +33,14 @@ function BestSellingProducts() {
               slidesPerView: 1,
               spaceBetween: 10,
           },
-          '@1.75' : {
+          '@1.25' : {
               slidesPerView: 2,
               spaceBetween: 10,
           },
-          '@2.25' : {
-              slidesPerView: 2,
-              spaceBetween: 10,
-          },
-          '@2.75' : {
+          '@2.00' : {
               slidesPerView: 4,
               spaceBetween: 10,
-          }
+          },
       }}
         autoplay={{
             delay: 5000,
