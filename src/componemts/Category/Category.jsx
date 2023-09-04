@@ -1,7 +1,6 @@
 import React from 'react'
 import Container from '@mui/material/Container'
 
-import { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -44,11 +43,11 @@ function Category() {
             slidesPerView: 2,
             spaceBetween: 20,
           },
-          '@1.50': {
+          '@1.00': {
             slidesPerView: 3,
             spaceBetween: 10,
           },
-          '@2.00': {
+          '@1.50': {
             slidesPerView: 6,
             spaceBetween: 10,
           },
