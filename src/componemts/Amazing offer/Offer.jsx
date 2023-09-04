@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from '@mui/material/Container'
-import OfferCard from '../cards/OfferCard'
+import ProductCard from '../cards/ProductCard'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -91,7 +91,7 @@ const renderer = ({days,hours, minutes, seconds}) => {
       >
         {products.map((product)=>(
         <SwiperSlide key={product.id}>
-            <OfferCard {...product}/>
+            <ProductCard {...product}/>
         </SwiperSlide>
         ))}
 

@@ -4,6 +4,7 @@ import Category from '../componemts/Category/Category'
 import Slider from '../componemts/slider/Slider'
 import BestSellingProducts from '../componemts/Best selling products/BestSellingProducts'
 import MiddleBanner from '../componemts/banners/MiddleBanner'
+import NewProducts from '../componemts/new products/NewProducts'
 function HomePage() {
   return (
   <>
@@ -12,6 +13,7 @@ function HomePage() {
   <Offer />
   <BestSellingProducts />
   <MiddleBanner />
+  <NewProducts />
   </>      
   )
 }

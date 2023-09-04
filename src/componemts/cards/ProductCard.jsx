@@ -1,13 +1,13 @@
 import React from 'react'
 
-function OfferCard({name,img,newPrice,prevPrice,offer,link}) {
+function ProductCard({name,img,newPrice,prevPrice,offer,link}) {
   return (
-                    <div className="bg-white leading-10 p-4">
+                    <div className="bg-white leading-10 p-4 rounded-3xl">
                       <div className="relative">
                         <a href="single-product.html" className="flex flex-col items-center justify-center">
                           <img className="mb-4" src={img} alt="" />
                         </a>
-                        <div className="bg-yellow-500 absolute top-2 right-2 rounded-full w-10 h-10">
+                        <div className={offer ? "bg-yellow-500 absolute top-2 right-2 rounded-full w-10 h-10" : 'hidden'}>
                           <p className="flex items-center justify-center">{offer}</p>
                         </div>
                       </div>
@@ -34,4 +34,4 @@ function OfferCard({name,img,newPrice,prevPrice,offer,link}) {
   )
 }
 
-export default OfferCard
+export default ProductCard
