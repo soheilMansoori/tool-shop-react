@@ -40,7 +40,7 @@ function Navbar() {
 
               <div className="flex items-center lg:flex-1 gap-8">
                 {/* logo */}
-                  <div><a href="/"><img src="https://mahdghanon.ir/tarazoo/assets/images/logo.png" alt="logo" /></a></div>
+                  <div><a href="/"><img src="./imgs/Logo/logo.png" alt="logo" /></a></div>
                   {/* input search */}
                   <div className="hidden lg:block w-3/4">
                       <div className="relative">
