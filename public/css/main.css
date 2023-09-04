@@ -22,6 +22,17 @@
     box-sizing: border-box;
 }
 
-#slider {
-  border-radius: 10px;
+#progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  height: 0.5rem;
+  background-color: #D2D4D7;
+  border-radius:  1rem;
+  vertical-align: baseline;
+}
+
+progress::-webkit-progress-value {
+  background-color: #FBBD23;
 }

@@ -19,8 +19,8 @@ function BestSellingCard({name,img,newPrice,prevPrice,allCount,count}) {
 
     <div className="flex items-center text-sm justify-center gap-4">
         <div>موجودی: {count} از {allCount}</div>
-        <div className=' md:w-auto'>
-          <progress value={count} max={allCount}></progress>
+        <div className='w-auto'>
+          <progress value={count} max={allCount} id='progress'></progress>
         </div>
     </div>
 </div>
