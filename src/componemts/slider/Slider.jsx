@@ -36,7 +36,9 @@ function Slider() {
           className="mySwiper"
           >
           {sliderImg.map((img)=>(
-              <SwiperSlide key={img.id}><img src={img.src} alt={img.alt} /></SwiperSlide>
+              <SwiperSlide key={img.id} className='bg-transparent'>
+                <img src={img.src} alt={img.alt} className='rounded-3xl'/>
+              </SwiperSlide>
           ))}
       </Swiper>
   </Container>

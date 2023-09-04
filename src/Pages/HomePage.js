@@ -5,6 +5,8 @@ import Slider from '../componemts/slider/Slider'
 import BestSellingProducts from '../componemts/Best selling products/BestSellingProducts'
 import MiddleBanner from '../componemts/banners/MiddleBanner'
 import NewProducts from '../componemts/new products/NewProducts'
+import EndBanners from '../componemts/banners/EndBanners'
+import SuggestionProducts from '../componemts/suggestion products/SuggestionProducts'
 function HomePage() {
   return (
   <>
@@ -14,6 +16,8 @@ function HomePage() {
   <BestSellingProducts />
   <MiddleBanner />
   <NewProducts />
+  <EndBanners />
+  <SuggestionProducts />
   </>      
   )
 }

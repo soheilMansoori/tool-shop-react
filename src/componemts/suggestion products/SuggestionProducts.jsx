@@ -1,6 +1,5 @@
 import React from 'react'
 import Container from '@mui/material/Container'
-import ProductCard from '../cards/ProductCard'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -11,9 +10,11 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { Autoplay } from 'swiper/modules';
+import ProductCard from '../cards/ProductCard';
 
 
-function NewProducts() {
+function SuggestionProducts() {
+
     const newPprdoucts = [
         {id:1,name:'کیف کمری ابزار',newPrice:'40000',prevPrice:'50000',img:'./imgs/products/new products/product-1.jpg',link:''},
         {id:2,name:'دریل شارژی دیوالت',newPrice:'40000',prevPrice:'50000',img:'./imgs/products/new products/product-2.jpg',link:''},
@@ -23,16 +24,14 @@ function NewProducts() {
 
     ] 
 
-
   return (
     <section className='my-14 px-4'>
       <Container maxWidth="xl">
-
-        <div className="text-center mb-8">
-          <h2 className="text-3xl">جدیدترین محصولات</h2>
+         <div className="text-center mb-8">
+              <h2 className="text-3xl">پیشنهاد های ترازو</h2>
         </div>
 
-          <Swiper
+        <Swiper
             breakpoints={{
               '@0.00': {
                 slidesPerView: 1,
@@ -65,9 +64,10 @@ function NewProducts() {
             ))}
 
         </Swiper>
+
       </Container>
     </section>
   )
 }
 
-export default NewProducts
+export default SuggestionProducts
