@@ -9,6 +9,7 @@ import ListItemText from '@mui/material/ListItemText';
 
 // mui icons
 import MenuIcon from '@mui/icons-material/Menu';
+import { Link } from 'react-router-dom';
 
 
 export default function ResMenu({pages}) {
@@ -38,7 +39,8 @@ export default function ResMenu({pages}) {
       <List>
         {pages.map((page) => (
           <ListItem key={page.id} disablePadding>
-            <ListItemButton>
+            <Link to={page.link}>
+              <ListItemButton>
                 
                 <ListItemIcon>
                     {page.icon}
@@ -48,7 +50,8 @@ export default function ResMenu({pages}) {
                     {page.name}
                 </ListItemText>
 
-            </ListItemButton>
+              </ListItemButton>
+            </Link>
           </ListItem>
         ))}
       </List>

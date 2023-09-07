@@ -29,15 +29,15 @@ function BestSellingProducts() {
 
       <Swiper
         breakpoints={{
-          '@0.00' : {
+          0 : {
               slidesPerView: 1,
               spaceBetween: 10,
           },
-          '@1.25' : {
+          768 : {
               slidesPerView: 2,
               spaceBetween: 10,
           },
-          '@2.00' : {
+          1200 : {
               slidesPerView: 4,
               spaceBetween: 10,
           },

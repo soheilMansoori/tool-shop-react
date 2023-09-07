@@ -12,20 +12,21 @@ import CompareIcon from '@mui/icons-material/Compare';
 import CoPresentIcon from '@mui/icons-material/CoPresent';
 import InfoIcon from '@mui/icons-material/Info';
 import CallIcon from '@mui/icons-material/Call';
+import { Link } from 'react-router-dom';
 // import PersonIcon from '@mui/icons-material/Person';
 
 
 function Navbar() {
 
     const pages = [
-        {id:1,name:'صفحه اصلی' , icon: <HomeIcon />, class:''},
-        {id:2,name:'فروشگاه' , icon: <StoreIcon />, class:''},
-        {id:3,name:'جزئیات پرداخت' , icon: <PaymentIcon />, class:''},
-        {id:4,name:'مقایسه محصول' , icon: <CompareIcon />, class:''},
-        {id:6,name:'وبلاگ' , icon: <CoPresentIcon />, class:''},
-        {id:7,name:'درباه ما' , icon: <InfoIcon />, class:''},
-        {id:8,name:'تماس با ما' , icon: <CallIcon />, class:''},
-        {id:9,name:'ورود / ثبت نام' , icon: <PersonIcon /> , class:'hidden'},
+        {id:1,name:'صفحه اصلی' , icon: <HomeIcon />, class:'',link:'/'},
+        {id:2,name:'فروشگاه' , icon: <StoreIcon />, class:'',link:'/shop'},
+        {id:3,name:'جزئیات پرداخت' , icon: <PaymentIcon />, class:'',link:''},
+        {id:4,name:'مقایسه محصول' , icon: <CompareIcon />, class:'',link:''},
+        {id:6,name:'وبلاگ' , icon: <CoPresentIcon />, class:'',link:''},
+        {id:7,name:'درباه ما' , icon: <InfoIcon />, class:'',link:''},
+        {id:8,name:'تماس با ما' , icon: <CallIcon />, class:'',link:''},
+        {id:9,name:'ورود / ثبت نام' , icon: <PersonIcon /> , class:'hidden',link:''},
       ]
   return (
 <nav className='shadow p-3'>
@@ -37,7 +38,6 @@ function Navbar() {
                         <ResMenu pages={pages}/>
                     </div>
               </div>
-
               <div className="flex items-center lg:flex-1 gap-8">
                 {/* logo */}
                   <div><a href="/"><img src="./imgs/Logo/logo.png" alt="logo" /></a></div>
@@ -88,7 +88,7 @@ function Navbar() {
                 <div className="hidden lg:block">
                       <ul className="flex gap-x-10">
                         {pages.map((page)=>(
-                            <li key={page.id} className={page.class}><a href="/">{page.name}</a></li>
+                            <li key={page.id} className={page.class}><Link to={page.link}>{page.name}</Link></li>
                         ))}
                       </ul>
                 </div>

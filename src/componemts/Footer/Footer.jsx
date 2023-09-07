@@ -26,24 +26,25 @@ function Footer() {
     ]
   return (
 <>
-<footer className="p-10 bg-stone-800 text-white">
+<footer className="">
+  <div className='p-10 bg-stone-800 text-white'>
         <Container maxWidth="xl">
         <div className="bg-yellow-500 p-8 rounded-3xl mb-10">
         <Swiper
             breakpoints={{
-              '@0.00': {
+              0: {
                 slidesPerView: 1,
                 spaceBetween: 10,
               },
-              '@0.75': {
+              768: {
                 slidesPerView: 2,
                 spaceBetween: 20,
               },
-              '@1.50': {
+              1024: {
                 slidesPerView: 3,
                 spaceBetween: 10,
               },
-              '@2.00': {
+              1440: {
                 slidesPerView: 5,
                 spaceBetween: 10,
               },
@@ -103,8 +104,9 @@ function Footer() {
               </div>
           </div>
         </Container>
-    </footer>
+      </div>
     <BottomFooter />
+    </footer>
 </>
   )
 }
