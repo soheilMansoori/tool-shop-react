@@ -7,6 +7,7 @@ import ProductPage from "./Pages/ProductPage";
 import LoginPage from "./Pages/LoginPage";
 import SignupPage from "./Pages/SignupPage";
 import NotFoundPage from "./Pages/NotFoundPage";
+import UserBasketPage from "./Pages/UserBasketPage";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/test" element={<ProductPage />}/>
         <Route path="/login" element={<LoginPage />}/>
         <Route path="/signup" element={<SignupPage />}/>
+        <Route path="/userbasket" element={<UserBasketPage />}/>
         <Route path="*" element={<NotFoundPage />}/>
       </Routes>
       <Footer />

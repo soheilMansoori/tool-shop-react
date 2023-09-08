@@ -63,11 +63,11 @@ function Navbar() {
                   
                   {/* userbasket */}
                   <div className="indicator">
-                      <a href="/" className="p-1">
+                      <Link to="/userbasket" className="p-1">
                         <Badge badgeContent={1} color="success">
                             <ShoppingCartIcon />
                         </Badge>
-                     </a>
+                     </Link>
                   </div>
 
 
