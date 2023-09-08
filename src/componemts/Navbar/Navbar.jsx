@@ -1,5 +1,4 @@
 import { Badge, Container } from '@mui/material'
-import React, { useState } from 'react'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import ResMenu from './responsevmenu/ResMenu';
 // mui icons
@@ -12,11 +11,13 @@ import CompareIcon from '@mui/icons-material/Compare';
 import CoPresentIcon from '@mui/icons-material/CoPresent';
 import InfoIcon from '@mui/icons-material/Info';
 import CallIcon from '@mui/icons-material/Call';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 // import PersonIcon from '@mui/icons-material/Person';
 
 
 function Navbar() {
+
+  let location = useLocation()
 
     const pages = [
         {id:1,name:'صفحه اصلی' , icon: <HomeIcon />, class:'',link:'/'},
@@ -26,10 +27,11 @@ function Navbar() {
         {id:6,name:'وبلاگ' , icon: <CoPresentIcon />, class:'',link:''},
         {id:7,name:'درباه ما' , icon: <InfoIcon />, class:'',link:''},
         {id:8,name:'تماس با ما' , icon: <CallIcon />, class:'',link:''},
-        {id:9,name:'ورود / ثبت نام' , icon: <PersonIcon /> , class:'hidden',link:''},
+        {id:9,name:'ورود / ثبت نام' , icon: <PersonIcon /> , class:'hidden',link:'/login'},
       ]
+      {/* <nav className='shadow p-3'> */}
   return (
-<nav className='shadow p-3'>
+<nav className={location.pathname === '/login' || location.pathname === '/signup' ? 'hidden' : 'shadow p-3'}>
     <Container maxWidth='xl'>
     <div className="flex items-center justify-between gap-4 lg:gap-40 py-6">
               {/* resposev menu */}
@@ -55,7 +57,7 @@ function Navbar() {
               <div className="flex items-center gap-6">
                   {/* login */}
                   <div className="hidden lg:block">
-                    <a href="/" className='hidden md:block'>ورود / ثبت نام</a>
+                    <Link to="/login" className='hidden md:block'>ورود / ثبت نام</Link>
                   </div>
                 
                   
@@ -88,7 +90,9 @@ function Navbar() {
                 <div className="hidden lg:block">
                       <ul className="flex gap-x-10">
                         {pages.map((page)=>(
-                            <li key={page.id} className={page.class}><Link to={page.link}>{page.name}</Link></li>
+                            <li key={page.id} className={page.class}>
+                              <Link to={page.link}>{page.name}</Link>
+                            </li>
                         ))}
                       </ul>
                 </div>

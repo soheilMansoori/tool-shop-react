@@ -12,10 +12,13 @@ import 'swiper/css/pagination';
 import { Autoplay } from 'swiper/modules';
 import ProductCard from '../cards/ProductCard';
 import BottomFooter from './BottomFooter';
+import { useLocation } from 'react-router-dom';
 
 
 
 function Footer() {
+  let location = useLocation()
+
     const companySymbols = [
         {id:1 , imgSrc:'./imgs/CompanySymbols/symbol-1.png'},
         {id:2 , imgSrc:'./imgs/CompanySymbols/symbol-2.png'},
@@ -26,7 +29,7 @@ function Footer() {
     ]
   return (
 <>
-<footer className="">
+<footer className={location.pathname === '/login' || location.pathname === '/signup' ? 'hidden' : ''}>
   <div className='p-10 bg-stone-800 text-white'>
         <Container maxWidth="xl">
         <div className="bg-yellow-500 p-8 rounded-3xl mb-10">

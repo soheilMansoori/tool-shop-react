@@ -65,19 +65,19 @@ const renderer = ({days,hours, minutes, seconds}) => {
 <div className="grid grid-cols-12 gap-4 p-4">
 <Swiper
         breakpoints={{
-          '@0.00': {
+          0 : {
             slidesPerView: 1,
             spaceBetween: 10,
           },
-          '@0.75': {
-            slidesPerView: 2,
+          320: {
+            slidesPerView: 1,
             spaceBetween: 20,
           },
-          '@1.50': {
-            slidesPerView: 3,
+          425: {
+            slidesPerView: 2,
             spaceBetween: 10,
           },
-          '@2.00': {
+          768: {
             slidesPerView: 3,
             spaceBetween: 10,
           },
@@ -87,10 +87,10 @@ const renderer = ({days,hours, minutes, seconds}) => {
             disableOnInteraction: false,
             }}
         modules={[Autoplay]}
-        className="mySwiper col-span-12 lg:col-span-9 rounded-3xl order-2 lg:order-1"
+        className="mySwiper col-span-12 lg:col-span-9 bg-transparent order-2 lg:order-1"
       >
         {products.map((product)=>(
-        <SwiperSlide key={product.id}>
+        <SwiperSlide key={product.id} className='bg-transparent rounded-3xl'>
             <ProductCard {...product}/>
         </SwiperSlide>
         ))}

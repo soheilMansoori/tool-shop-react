@@ -9,7 +9,7 @@ function Stepper({stepper}) {
         <Container maxWidth="xl">
           <div className="bg-white p-4 rounded-3xl mb-4">
             <Breadcrumbs>
-                {stepper.map(stepper=>(
+                {stepper && stepper.map(stepper=>(
                     <Link to={stepper.link} key={stepper.id} className='lg:p-4 hover:underline'>
                         {stepper.pageName}
                   </Link>

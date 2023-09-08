@@ -35,19 +35,19 @@ function Category() {
 
 <Swiper
         breakpoints={{
-          '@0.00': {
+          0: {
             slidesPerView: 1,
             spaceBetween: 10,
           },
-          '@0.75': {
+          375: {
             slidesPerView: 2,
             spaceBetween: 20,
           },
-          '@1.00': {
+          768 : {
             slidesPerView: 3,
             spaceBetween: 10,
           },
-          '@1.50': {
+          1024: {
             slidesPerView: 6,
             spaceBetween: 10,
           },
