@@ -8,6 +8,9 @@ import LoginPage from "./Pages/LoginPage";
 import SignupPage from "./Pages/SignupPage";
 import NotFoundPage from "./Pages/NotFoundPage";
 import UserBasketPage from "./Pages/UserBasketPage";
+import ContactPage from "./Pages/ContactPage";
+import AboutPage from "./Pages/AboutPage";
+import BlogPage from "./Pages/BlogPage";
 
 
 function App() {
@@ -22,6 +25,9 @@ function App() {
         <Route path="/login" element={<LoginPage />}/>
         <Route path="/signup" element={<SignupPage />}/>
         <Route path="/userbasket" element={<UserBasketPage />}/>
+        <Route path="/contact" element={<ContactPage />}/>
+        <Route path="/about" element={<AboutPage />}/>
+        <Route path="/blog" element={<BlogPage />}/>
         <Route path="*" element={<NotFoundPage />}/>
       </Routes>
       <Footer />

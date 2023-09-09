@@ -12,14 +12,14 @@ function BlogCard({name,img,day,month}) {
                 'hidden'
               }>
                 <div className="flex flex-col">
-                  <span className="font-YekanBakh-ExtraBold text-2xl">{day}</span>
-                  <span className="font-YekanBakh-Bold">{month}</span>
+                  <span className="text-2xl">{day}</span>
+                  <span>{month}</span>
                 </div>
               </div>
             </div>
             <div className="flex justify-between items-center mt-4">
               <div>
-                <a href="single-page.html"><h3 className="font-YekanBakh-ExtraBold text-base">{name}</h3></a>
+                <a href="single-page.html"><h3 className="text-base">{name}</h3></a>
               </div>
               <div>
                 <a className="flex items-center" href="#">

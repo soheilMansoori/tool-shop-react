@@ -18,7 +18,7 @@ function UserBasketProducts() {
                 <span className="text-yellow-500">280.000 تومان</span>
               </div>
             <div>
-                <div className="number flex">
+                <div className="flex">
                     <span className="minus p-4">تعداد:</span>
                     <input type="text" className="input input-bordered text-center w-20"/>
                     
@@ -39,7 +39,7 @@ function UserBasketProducts() {
                 <span className="text-yellow-500">280.000 تومان</span>
               </div>
             <div>
-                <div className="number flex">
+                <div className="flex">
                     <span className="minus p-4">تعداد:</span>
                     <input type="text" className="input input-bordered text-center w-20" />
                     
