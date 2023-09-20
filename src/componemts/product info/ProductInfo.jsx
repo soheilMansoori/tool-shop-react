@@ -54,7 +54,7 @@ function ProductInfo() {
         >
           {imgs.map(img => (
             <SwiperSlide key={img.id}>
-              <div>
+              <div className='cursor-pointer'>
                 <img src={img.src} />
               </div>
             </SwiperSlide>
