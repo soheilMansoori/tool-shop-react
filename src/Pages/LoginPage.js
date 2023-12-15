@@ -105,7 +105,7 @@ function LoginPage() {
                             <p className="text-center my-4"><Link to='/signup'>حساب کاربری ندارید !!!</Link></p>
                         </div>
                         <div className="hidden md:block">
-                            <img className="bg-cover" src="./imgs/login/login.jpg" />
+                            <img className="bg-cover" src="/imgs/login/login.jpg" />
                         </div>
                     </div>
                 </div>

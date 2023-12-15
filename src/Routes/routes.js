@@ -12,7 +12,7 @@ import NotFoundPage from '../Pages/NotFoundPage'
 const routes = [ 
     {path:'/' , element: <HomePage />},
     {path:'/shop' , element: <ShopPage />},
-    {path:'/test' , element: <ProductPage />},
+    {path:'/product/:productID' , element: <ProductPage />},
     {path:'/login' , element: <LoginPage />},
     {path:'/signup' , element: <SignupPage />},
     {path:'/userbasket' , element: <UserBasketPage />},

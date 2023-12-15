@@ -20,12 +20,12 @@ function Footer() {
   let location = useLocation()
 
     const companySymbols = [
-        {id:1 , imgSrc:'./imgs/CompanySymbols/symbol-1.png'},
-        {id:2 , imgSrc:'./imgs/CompanySymbols/symbol-2.png'},
-        {id:3 , imgSrc:'./imgs/CompanySymbols/symbol-3.png'},
-        {id:4 , imgSrc:'./imgs/CompanySymbols/symbol-4.png'},
-        {id:5 , imgSrc:'./imgs/CompanySymbols/symbol-5.png'},
-        {id:6 , imgSrc:'./imgs/CompanySymbols/symbol-6.png'},
+        {id:1 , imgSrc:'/imgs/CompanySymbols/symbol-1.png'},
+        {id:2 , imgSrc:'/imgs/CompanySymbols/symbol-2.png'},
+        {id:3 , imgSrc:'/imgs/CompanySymbols/symbol-3.png'},
+        {id:4 , imgSrc:'/imgs/CompanySymbols/symbol-4.png'},
+        {id:5 , imgSrc:'/imgs/CompanySymbols/symbol-5.png'},
+        {id:6 , imgSrc:'/imgs/CompanySymbols/symbol-6.png'},
     ]
   return (
 <>
@@ -101,8 +101,8 @@ function Footer() {
               <div className="col-span-12 lg:col-span-3">
                   <h3 className="font-YekanBakh-Bold text-white mb-4 text-lg">عضویت در خبرنامه</h3>
                   <div className="flex flex-col justify-start sm:flex-row items-center">
-                    <img src="./imgs/Symbols/symbol-1.png" alt="" />
-                    <img src="./imgs/Symbols/symbol-2.png" alt="" />
+                    <img src="/imgs/Symbols/symbol-1.png" alt="" />
+                    <img src="/imgs/Symbols/symbol-2.png" alt="" />
                   </div>
               </div>
           </div>

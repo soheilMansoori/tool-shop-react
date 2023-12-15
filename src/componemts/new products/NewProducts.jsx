@@ -12,14 +12,14 @@ import { Autoplay } from 'swiper/modules';
 
 
 function NewProducts() {
-    const newPprdoucts = [
-        {id:1,name:'کیف کمری ابزار',newPrice:'40000',prevPrice:'50000',img:'./imgs/products/new products/product-1.jpg',link:''},
-        {id:2,name:'دریل شارژی دیوالت',newPrice:'40000',prevPrice:'50000',img:'./imgs/products/new products/product-2.jpg',link:'',colors : ['#EF4444','#EAB308']},
-        {id:3,name:'دستگاه مدل ingco',newPrice:'40000',prevPrice:'50000',img:'./imgs/products/new products/product-3.jpg',link:''},
-        {id:4,name:'دستگاه پمپ باد',newPrice:'40000',prevPrice:'50000',img:'./imgs/products/new products/product-4.jpg',link:''},
-        {id:5,name:'دریل برقی مدل x',newPrice:'40000',prevPrice:'50000',img:'./imgs/products/new products/product-5.jpg',link:''},
+  const newPprdoucts = [
+    { id: 1, name: 'کیف کمری ابزار', newPrice: '40000', prevPrice: '50000', img: '/imgs/products/new products/product-1.jpg', link: '' },
+    { id: 2, name: 'دریل شارژی دیوالت', newPrice: '40000', prevPrice: '50000', img: '/imgs/products/new products/product-2.jpg', link: '', colors: ['#EF4444', '#EAB308'] },
+    { id: 3, name: 'دستگاه مدل ingco', newPrice: '40000', prevPrice: '50000', img: '/imgs/products/new products/product-3.jpg', link: '' },
+    { id: 4, name: 'دستگاه پمپ باد', newPrice: '40000', prevPrice: '50000', img: '/imgs/products/new products/product-4.jpg', link: '' },
+    { id: 5, name: 'دریل برقی مدل x', newPrice: '40000', prevPrice: '50000', img: '/imgs/products/new products/product-5.jpg', link: '' },
 
-    ] 
+  ]
 
 
   return (
@@ -30,37 +30,37 @@ function NewProducts() {
           <h2 className="text-3xl">جدیدترین محصولات</h2>
         </div>
 
-          <Swiper
-            breakpoints={{
-              0 : {
-                slidesPerView: 1,
-                spaceBetween: 10,
-              },
-              768: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-              },
-              1024: {
-                slidesPerView: 3,
-                spaceBetween: 10,
-              },
-              1440: {
-                slidesPerView: 4,
-                spaceBetween: 10,
-              },
-            }}
-            autoplay={{
-                delay: 5000,
-                disableOnInteraction: false,
-                }}
-            modules={[Autoplay]}
-            className="mySwiper"
-          >
-            {newPprdoucts.map((product)=>(
+        <Swiper
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 10,
+            },
+            1440: {
+              slidesPerView: 4,
+              spaceBetween: 10,
+            },
+          }}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay]}
+          className="mySwiper"
+        >
+          {newPprdoucts.map((product) => (
             <SwiperSlide key={product.id} className='bg-transparent'>
-                <ProductCard {...product}/>
+              <ProductCard {...product} />
             </SwiperSlide>
-            ))}
+          ))}
 
         </Swiper>
       </Container>

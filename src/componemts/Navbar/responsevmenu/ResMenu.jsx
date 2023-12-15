@@ -12,7 +12,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
 
 
-export default function ResMenu({pages}) {
+export default function ResMenu({ pages }) {
   const [state, setState] = useState({
     right: false,
   });
@@ -23,15 +23,15 @@ export default function ResMenu({pages}) {
       return;
     }
 
-    setState({right: open });
+    setState({ right: open });
   };
 
 
 
-//   menu items
+  //   menu items
   const list = () => (
     <Box
-      width = '250px'
+      width='250px'
       role="presentation"
       onClick={toggleDrawer(false)}
       onKeyDown={toggleDrawer(false)}
@@ -41,13 +41,13 @@ export default function ResMenu({pages}) {
           <ListItem key={page.id} disablePadding>
             <Link to={page.link}>
               <ListItemButton>
-                
+
                 <ListItemIcon>
-                    {page.icon}
+                  {page.icon}
                 </ListItemIcon>
 
                 <ListItemText className='text-right'>
-                    {page.name}
+                  {page.name}
                 </ListItemText>
 
               </ListItemButton>
@@ -60,16 +60,16 @@ export default function ResMenu({pages}) {
 
   return (
     <>
-        {/* menu icon */}
-          <MenuIcon onClick={toggleDrawer(true)}/>
-        {/* menu */}
-          <Drawer
-            anchor='right'
-            open={state['right']}
-            onClose={toggleDrawer(false)}
-          >
-            {list()}
-          </Drawer>
+      {/* menu icon */}
+      <MenuIcon onClick={toggleDrawer(true)} />
+      {/* menu */}
+      <Drawer
+        anchor='right'
+        open={state['right']}
+        onClose={toggleDrawer(false)}
+      >
+        {list()}
+      </Drawer>
     </>
   );
 }
